@@ -1,0 +1,76 @@
+@import url("normalize.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {}
+
+::selection {
+}
+
+html,
+body,
+#root {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1920px;
+    scroll-behavior: smooth;
+    font-family: 'RobotoMonoBold', Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 230, 210);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
