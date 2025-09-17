@@ -87,7 +87,10 @@
 
 .social-networks__link {}
 
-.social-networks__image {}
+.social-networks__image {
+    width: 40px;
+    height: 40px;
+}
 
 .header__buttons {
     display: flex;
@@ -160,6 +163,20 @@
 .burger-block {
     display: none;
 }
+
+.progress-bar {
+    height: 5px;
+    width: 100%;
+    background-color: #d3d3d3;
+}
+
+.progress-fill {
+    height: 5px;
+    width: 100%;
+    background-color: #FD6A11;
+}
+
+
 
 @media (max-width: 1440px) {
 

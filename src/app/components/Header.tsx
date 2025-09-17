@@ -7,6 +7,7 @@ import styles from "./Header.module.css";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     if (isOpen) {
@@ -15,6 +16,19 @@ export default function Header() {
       document.body.style.overflow = "";
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    const updateScrollProgress = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener("scroll", updateScrollProgress);
+    return () => window.removeEventListener("scroll", updateScrollProgress);
+  }, []);
 
   return (
     <header className={styles["header"]}>
@@ -112,6 +126,12 @@ export default function Header() {
             Записаться
           </a>
         </div>
+      </div>
+      <div className={styles["progress-bar"]}>
+        <div
+          className={styles["progress-fill"]}
+          style={{ width: `${scrollProgress}%` }}
+        />
       </div>
       <div className={styles["header__bottom"]}>
         <nav className={styles["sub-nav"]} aria-label="Второстепенное меню">
