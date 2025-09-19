@@ -5,6 +5,7 @@ import "accordion-js/dist/accordion.min.css";
 import styles from "./Faq.module.css";
 
 export default function Faq() {
+
   useEffect(() => {
     import("accordion-js").then(({ default: Accordion }) => {
       const el = document.querySelector(".accordion");
@@ -26,50 +27,39 @@ export default function Faq() {
   const faq: Faq[] = [
     {
       id: 1,
-      question: "Какой-то вопрос?",
+      question: "Как часто нужно мыть машину?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, minima veritatis vero voluptatibus minus neque quae! Vero molestiae perspiciatis harum totam voluptate soluta explicabo, quidem, id, ratione in officiis hic.",
+        "Рекомендуем каждые 1–2 недели. Регулярная мойка защищает ЛКП от реагентов, грязи и мелких повреждений, сохраняя авто в идеальном виде.",
     },
     {
       id: 2,
-      question: "Какой-то вопрос?",
+      question: "Для чего нужны защитные покрытия на автомобиле?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, minima veritatis vero voluptatibus minus neque quae! Vero molestiae perspiciatis harum totam voluptate soluta explicabo, quidem, id, ratione in officiis hic.",
+        "Они образуют прочный барьер от грязи, реагентов, ультрафиолета и мелких царапин. Авто дольше остаётся чистым и блестящим.",
     },
     {
       id: 3,
-      question: "Какой-то вопрос?",
+      question: "Что такое керамическая защита авто?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, minima veritatis vero voluptatibus minus neque quae! Vero molestiae perspiciatis harum totam voluptate soluta explicabo, quidem, id, ratione in officiis hic.",
+        "Это инновационное покрытие, создающее прочную защитную пленку. Кузов приобретает глубокий блеск, а мыть машину становится гораздо проще.",
     },
     {
       id: 4,
-      question: "Какой-то вопрос?",
+      question: "Как часто и зачем нужно полировать авто?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, minima veritatis vero voluptatibus minus neque quae! Vero molestiae perspiciatis harum totam voluptate soluta explicabo, quidem, id, ratione in officiis hic.",
+        "Полировка 1–2 раза в год убирает мелкие дефекты, возвращает яркость ЛКП и подготавливает поверхность для надёжной защиты.",
     },
     {
       id: 5,
-      question: "Какой-то вопрос?",
+      question: "Зачем мыть подкрылки и днище, если их не видно?",
       answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, minima veritatis vero voluptatibus minus neque quae! Vero molestiae perspiciatis harum totam voluptate soluta explicabo, quidem, id, ratione in officiis hic.",
-    },
-    {
-      id: 6,
-      question: "Какой-то вопрос?",
-      answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, minima veritatis vero voluptatibus minus neque quae! Vero molestiae perspiciatis harum totam voluptate soluta explicabo, quidem, id, ratione in officiis hic.",
-    },
-    {
-      id: 7,
-      question: "Какой-то вопрос?",
-      answer:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, minima veritatis vero voluptatibus minus neque quae! Vero molestiae perspiciatis harum totam voluptate soluta explicabo, quidem, id, ratione in officiis hic.",
+        "В этих зонах скапливается грязь, соль и влага — главные враги кузова. Регулярная мойка продлевает срок службы металла и предотвращает коррозию.",
     },
   ];
 
   return (
-    <section className={styles.faq}>
+    <section className={styles.faq} id="faq">
+
       <h2 className={styles.faq__title}>ВОПРОС-ОТВЕТ</h2>
 
       <div className="accordion">
@@ -89,6 +79,7 @@ export default function Faq() {
           </div>
         ))}
       </div>
+      
     </section>
   );
 }

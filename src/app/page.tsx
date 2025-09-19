@@ -5,6 +5,7 @@ import Hits from "./components/Hits/Hits";
 import About from "./components/About/About";
 import Faq from "./components/Faq/Faq";
 import Gallery from "./components/Gallery/Gallery";
+import Contacts from "./components/Contacts/Contacts";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <About />
       <Faq />
       <Gallery />
+      <Contacts />
     </>
   );
 }

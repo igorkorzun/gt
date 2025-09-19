@@ -27,16 +27,11 @@
 
 .gallery__image {
     object-fit: cover;
-    /* filter: sepia(1) saturate(2.5) hue-rotate(-20deg); */
 }
 
 .gallery__item:hover {
     transform: scale(1.05);
     z-index: 100;
-}
-
-@media (max-width: 1440px) {
-
 }
 
 @media (max-width: 992px) {

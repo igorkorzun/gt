@@ -22,131 +22,87 @@ interface Hits {
 const hits: Hits[] = [
   {
     id: 1,
-    title: "Мойка Protector",
+    title: "МОЙКА ПЕРФЕКТО",
     description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-1.jpg",
+      "Трёхфазная мойка премиум-класса. Абсолютная чистота и бережная защита ЛКП от агрессивной среды. Ваш автомобиль сияет дольше и выглядит безупречно каждый день.",
+    price: "ОТ 50 РУБЛЕЙ",
+    image: "/hits/1.jpg",
     link: "#",
   },
   {
     id: 2,
-    title: "Мойка Protector",
+    title: "МОЙКА PROTECTOR",
     description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-2.jpg",
+      "Глубокое очищение с консервацией премиальным полимером. Надёжная защита и восстановление керамических покрытий — идеальный выбор для тех, кто заботится о долговечности авто.",
+    price: "ОТ 60 РУБЛЕЙ",
+    image: "/hits/2.jpg",
     link: "#",
   },
   {
     id: 3,
-    title: "Мойка Protector",
+    title: "ФИРМЕННАЯ МОЙКА GT",
     description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-3.jpg",
+      "Максимально деликатная мойка и бережная сушка с применением SIO₂-консерванта. Минимум химии и механики — максимум блеска и стойкий гидрофобный эффект.",
+    price: "ОТ 105 РУБЛЕЙ",
+    image: "/hits/3.jpg",
     link: "#",
   },
-    {
+  {
     id: 4,
-    title: "Мойка Protector",
+    title: "ЧИСТКА ЛКП + ПОЛИМЕР",
     description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-4.jpg",
+      "Эффективное удаление битума и стойких загрязнений с последующей обработкой полимером. До 3 месяцев защиты и сияния кузова.",
+    price: "ОТ 380 РУБЛЕЙ",
+    image: "/hits/4.jpg",
     link: "#",
   },
   {
     id: 5,
-    title: "Мойка Protector",
+    title: "ЧИСТЫЙ КАЙФ",
     description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-5.jpg",
+      "Комплексная программа: удаление битума, мойка днища, антидождь для стёкол, глубокая уборка салона и защита кузова полимером. Ваш авто — идеально чистый и защищённый, а вы экономите более 20%.",
+    price: "ОТ 590 РУБЛЕЙ",
+    image: "/hits/5.jpg",
     link: "#",
   },
   {
     id: 6,
-    title: "Мойка Protector",
+    title: "КОМПЛЕКС GT PRO",
     description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-6.jpg",
-    link: "#",
-  },
-    {
-    id: 7,
-    title: "Мойка Protector",
-    description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-7.jpg",
-    link: "#",
-  },
-  {
-    id: 8,
-    title: "Мойка Protector",
-    description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-8.jpg",
-    link: "#",
-  },
-  {
-    id: 9,
-    title: "Мойка Protector",
-    description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-9.jpg",
-    link: "#",
-  },
-    {
-    id: 10,
-    title: "Мойка Protector",
-    description:
-      "Максимальное очищение поверхности с последующей консервацией ЛКП полимером премиум класса. Гарантированная сохранность и регенерация нанесенных защитных керамических покрытий.",
-    price: "ОТ 45 РУБЛЕЙ",
-    image: "/fon/fon-10.jpg",
+      "Наш флагманский комплекс для настоящих ценителей. Детализированная мойка и уборка салона с премиальной химией и вниманием к каждой детали.",
+    price: "ОТ 295 РУБЛЕЙ",
+    image: "/hits/6.jpg",
     link: "#",
   },
 ];
 
 export default function Hits() {
   return (
-    <section className={styles["hits"]}>
+    <section className={styles["hits"]} id="hits">
+
       <h2 className={styles["hits__title"]}>Хиты</h2>
+
       <p className={styles["hits__subtitle"]}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi veniam
-        maiores optio. Saepe fugiat nulla, quo animi minus perspiciatis enim ex
-        quas rerum vitae expedita recusandae velit voluptate. Sunt, adipisci?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, commodi
-        laboriosam. Nam facilis obcaecati nesciunt numquam debitis velit. Est
-        perspiciatis, ex rerum ipsum deserunt temporibus cum inventore quia hic
-        quidem!
+        Хиты — это самые востребованные и любимые услуги нашими клиентами. Мы
+        собрали ТОП-позиции, которые неизменно выбирают за идеальное сочетание
+        качества и эффективности. Каждая из этих процедур — проверенный фаворит,
+        который гарантированно подарит вашему автомобилю безупречный вид и
+        свежесть.
       </p>
+
       <Swiper
+        aria-label="Список популярнейших услуг автомойки"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
+        slidesPerView="auto"
+        centeredSlides={true}
+        navigation={true}
         loop={true}
-        navigation={{
-          prevEl: `.${styles.swiperPrev}`,
-          nextEl: `.${styles.swiperNext}`,
-        }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1440: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-          },
+          0: { slidesPerView: 1, spaceBetween: 10 },
+          993: { slidesPerView: 2, spaceBetween: 20 },
+          1441: { slidesPerView: 3, spaceBetween: 30 },
         }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
@@ -157,27 +113,20 @@ export default function Hits() {
             key={hit.id}
             style={{
               backgroundImage: `url(${hit.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundColor: 'azure'
             }}
           >
             <div className={styles["hits-card__content"]}>
               <h3 className={styles["hits-card__title"]}>{hit.title}</h3>
               <p className={styles["hits-card__descr"]}>{hit.description}</p>
               <span className={styles["hits-card__price"]}>{hit.price}</span>
-              <div className={styles["hits-card__buttons"]}>
-                <a href="#" className={styles["hits-card__btn-signup"]}>
-                  ЗАПИСАТЬСЯ
-                </a>
-                <Link href={"#"} className={styles["hits-card__btn-more"]}>
-                  ПОДРОБНЕЕ
-                </Link>
-              </div>
+              <Link href={hit.link} className={styles["hits-card__btn-more"]}>
+                Подробнее
+              </Link>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+      
     </section>
   );
 }

@@ -3,33 +3,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 100px 0;
+    gap: var(--gap-1);
+    padding: var(--gap-1) 0;
 }
 
 .faq__title {
-    font-weight: bold;
-    font-size: 36px;
+    font-family: var(--font-days-one);
+    font-size: var(--size-title-2);
     text-align: center;
-    color: #fd6a11;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    padding: 0 100px;
+    color: var(--color-orange);
+    text-shadow: 0 0 10px var(--color-black-easy);
+    padding: 0 var(--gap-1);
 }
 
 :global(.accordion) {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: var(--gap-2);
 }
 
 :global(.ac) {
     margin: 0;
     border: none;
-    background-color: black;
+    background-color: var(--color-black);
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../../../../public/faq.png);
     background-size: cover;
-    background-position: 50% 72.5%;
+    background-position: 56% 72.5%;
     background-repeat: no-repeat;
     border: 1px solid #252525;
     border-radius: 0 50px 50px 0;
@@ -47,16 +47,12 @@
     min-height: 100px;
 }
 
-:global(.ac.is-active>.ac-header) {
-    /* margin-bottom: 30px ; */
-}
-
 :global(.ac .ac-trigger) {
-    font-weight: bold;
-    font-size: 24px;
+    font-family: var(--font-days-one);
+    font-size: var(--size-title-3);
     text-align: center;
     align-items: center;
-    color: #fff;
+    color: var(--color-white);
     padding: 25px 100px 25px 100px;
 }
 
@@ -65,7 +61,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #FD6A11;
+    background-color: var(--color-orange);
     top: 50%;
     right: 15px;
     background-image: url(../../../../public/accordplus.png);
@@ -78,7 +74,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #FD6A11;
+    background-color: var(--color-orange);
     top: 50%;
     left: 15px;
     background-image: url(../../../../public/accordplus.png);
@@ -92,137 +88,35 @@
 }
 
 :global(.ac .ac-trigger:focus) {
-    color: #FFFFFF;
+    color: var(--color-white);
 }
-
-:global(.qwe) {
-    width: 90px;
-    height: 90px;
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-    color: #fff;
-}
-
-:global(.qwe::before) {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50%;
-    height: 1px;
-    background-color: #000;
-    transform: translate(-50%, -50%);
-}
-
-:global(.qwe::after) {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 1px;
-    height: 50%;
-    background-color: #000;
-    transform: translate(-50%, -50%);
-}
-
-:global(.ac-panel) {}
 
 :global(.ac .ac-panel) {
-    padding: 0 30px 0 30px;
+    padding: 0 var(--gap-5) 0 var(--gap-5);
 }
 
 :global(.ac.is-active .ac-panel) {
-    padding: 0 30px 0px 30px;
-    margin-bottom: 30px;
+    padding: 0 var(--gap-5) 0 var(--gap-5);
+    margin-bottom: var(--gap-5);
 }
 
-
 :global(.ac .ac-panel .ac-text) {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 24px;
+    font-size: var(--size-text-2);
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
     padding: 0;
 }
 
-
-@media (max-width: 1440px) {
-
-    .faq {
-        padding: 50px 0;
-        gap: 50px;
-    }
-
-    .faq__title {
-        padding: 0 50px;
-    }
-
-    :global(.ac) {
-        background-position: 55% 72.5%;
-    }
-
-    :global(.ac .ac-trigger) {
-        font-size: 20px;
-        padding: 25px 100px 25px 25px;
-    }
-
-    :global(.ac-right .ac-trigger) {
-        font-size: 20px;
-        padding: 25px 25px 25px 100px;
-    }
-
-    :global(.ac .ac-panel .ac-text) {
-        font-size: 20px;
-    }
-
-    :global(.ac .ac-panel) {
-        padding: 0 10px 0 10px;
-    }
-
-    :global(.ac.is-active .ac-panel) {
-        padding: 0 10px 0px 10px;
-    }
-
-}
-
 @media (max-width: 992px) {
-
-    .faq {
-        padding: 25px 0;
-        gap: 25px;
-    }
-
-    .faq__title {
-        font-size: 28px;
-    }
-
     :global(.ac) {
-        background-position: 55% 72.5%;
-        width: 100%;
+        width: 90%;
     }
 
     :global(.ac .ac-trigger) {
-        font-size: 16px;
-        padding: 10px 100px 10px 10px;
+        padding: 30px 100px 30px 10px;
     }
 
     :global(.ac-right .ac-trigger) {
-        padding: 10px 10px 10px 100px;
+        padding: 30px 10px 30px 100px;
     }
-
-    :global(.ac .ac-panel .ac-text) {
-        font-size: 16px;
-    }
-
-    :global(.ac .ac-panel) {
-        padding: 0 10px 0 10px;
-    }
-
-    :global(.ac.is-active .ac-panel) {
-        padding: 0 10px 10px 10px;
-    }
-
 }

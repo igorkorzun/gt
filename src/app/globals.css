@@ -1,10 +1,89 @@
 @import url("normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {}
+:root {
+    --header-background-top: grayscale(1) contrast(1.5) blur(5px);
+
+    --hero-linear-gradient: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+
+    --font-days-one: 'Days One', sans-serif;
+
+    --icon-size: 50px;
+
+    --color-orange: #fd6a11;
+    --color-gray: #d3d3d3;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-black-easy: rgba(0, 0, 0, 0.9);
+    --color-black-really-easy: rgba(0, 0, 0, 0.75);
+    --color-gray-easy: rgba(105, 105, 105, 0.5);
+
+    --size-title-1: 50px;
+    --size-title-2: 36px;
+    --size-title-3: 28px;
+    --size-title-4: 24px;
+
+    --size-text-1: 28px;
+    --size-text-2: 24px;
+    --size-text-3: 20px;
+    --size-text-4: 16px;
+
+    --gap-1: 60px;
+    --gap-2: 30px;
+    --gap-3: 20px;
+    --gap-4: 10px;
+    --gap-5: 30px;
+    --gap-6: 5px;
+
+    --btn-padding-ver: 15px;
+    --btn-padding-gor: 25px;
+}
+
+@media (max-width: 1440px) {
+    :root {
+        --icon-size: 40px;
+
+        --size-title-1: 40px;
+        --size-title-2: 30px;
+        --size-title-3: 24px;
+        --size-title-4: 22px;
+
+        --size-text-1: 24px;
+        --size-text-2: 22px;
+        --size-text-3: 18px;
+        --size-text-4: 14px;
+
+        --gap-1: 30px;
+        --gap-2: 20px;
+        --gap-3: 15px;
+
+        --btn-padding-ver: 10px;
+        --btn-padding-gor: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --size-title-1: 30px;
+        --size-title-2: 24px;
+        --size-title-3: 20px;
+        --size-title-4: 20px;
+
+        --size-text-1: 20px;
+        --size-text-2: 20px;
+        --size-text-3: 16px;
+        --size-text-4: 12px;
+
+        --gap-1: 30px;
+        --gap-2: 10px;
+        --gap-3: 10px;
+    }
+}
 
 ::selection {}
 

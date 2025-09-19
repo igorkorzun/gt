@@ -1,0 +1,71 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-1);
+    padding: var(--gap-1) 0;
+}
+
+.contacts__title {
+    font-family: var(--font-days-one);
+    font-size: var(--size-title-2);
+    text-align: center;
+    color: var(--color-orange);
+    text-shadow: 0 0 10px var(--color-black-easy);
+    padding: 0 var(--gap-1);
+}
+
+.contacts__address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-5);
+    padding: 0 var(--gap-1);
+}
+
+.contacts__link-telephone {
+    font-family: var(--font-days-one);
+    font-size: var(--size-text-2);
+    text-align: center;
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.contacts__link-address {
+    font-family: var(--font-days-one);
+    font-size: var(--size-text-2);
+    text-align: center;
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.contacts__link-mail {
+    font-family: var(--font-days-one);
+    font-size: var(--size-text-2);
+    text-align: center;
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.contacts__worktime {
+    font-family: var(--font-days-one);
+    font-size: var(--size-text-1);
+    text-align: center;
+    color: var(--color-white);
+}
+
+.contacts__worktime strong {
+    color: #fd6a11;
+}
+
+.contacts__social-list {
+    display: flex;
+    gap: var(--gap-5);
+    align-items: center;
+    justify-content: center;
+}
+
+:global([class*="ground-pane"]) {
+    filter: grayscale(1) brightness(1) invert(1);
+}

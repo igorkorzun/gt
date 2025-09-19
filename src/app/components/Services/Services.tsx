@@ -15,151 +15,175 @@ interface Service {
   title: string;
   description: string[];
   image: string;
+  link: string;
 }
 
 const services: Service[] = [
   {
     id: 1,
-    title: "1",
+    title: "МОЕЧНЫЕ ПРОГРАММЫ",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "МОЙКА ЭКСПРЕСС",
+      "МОЙКА ОПТИМА",
+      "МОЙКА ПЕРФЕКТО",
+      "МОЙКА PROTECTOR",
+      "ФИРМЕННАЯ МОЙКА GT",
+      "ФИРМЕННАЯ МОЙКА GT PLUS",
+      "МОЙКА МОТОЦИКЛА",
     ],
-    image: "/fon/fon-1.jpg",
+    image: "/services/washing-programs.jpg",
+    link: "#",
   },
   {
     id: 2,
-    title: "2",
+    title: "КОМПЛЕКСЫ",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "КОМПЛЕКС ОПТИМА",
+      "КОМПЛЕКС ПЕРФЕКТО",
+      "КОМПЛЕКС PROTECTOR",
+      "КОМПЛЕКС GT",
+      "КОМПЛЕКС GT PLUS",
+      "КОМПЛЕКС GT PLUS",
     ],
-    image: "/fon/fon-2.jpg",
+    image: "/services/complexes.jpg",
+    link: "#",
   },
   {
     id: 3,
-    title: "3",
+    title: "ИНТЕРЬЕР",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "КОМПЛЕКСНАЯ УБОРКА",
+      "ПЫЛЕСОС",
+      "ПЛАСТИК",
+      "СТЕКЛА И ЗЕРКАЛА",
+      "КОНДИЦИОНЕР КОЖИ",
     ],
-    image: "/fon/fon-3.jpg",
+    image: "/services/interior.jpg",
+    link: "#",
   },
   {
     id: 4,
-    title: "4",
+    title: "СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "ЧИСТКА ЛКП + ПОЛИМЕР",
+      "ЧИСТКА ЛКП + ВОСК",
+      "ЧИСТКА ЛКП + КВАРЦ",
+      "ЧИСТЫЙ КАЙФ",
     ],
-    image: "/fon/fon-4.jpg",
+    image: "/services/special-offers.jpg",
+    link: "#",
   },
   {
     id: 5,
-    title: "5",
+    title: "ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "УДАЛЕНИЕ БИТУМА",
+      "ОТБЕЛИВАНИЕ ДИСКОВ",
+      "МОЙКА ПОДКАПОТНОГО ПРОСТРАНСТВА",
+      "АНТИДОЖДЬ",
+      "ЧЕРНЕНИЕ РЕЗИНЫ",
     ],
-    image: "/fon/fon-5.jpg",
+    image: "/services/additional-services.jpg",
+    link: "#",
   },
   {
     id: 6,
-    title: "6",
+    title: "ХИМЧИСТКА",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "ХИМЧИТСКА",
+      "ХИМЧИСТКА GT PRO",
+      "ХИМЧИСТКА ДЕТКИХ КРЕСЕЛ",
+      "ХИМЧИСТКА КОЖИ",
+      "ХИМЧИСТКА РУЛЯ",
+      "УСТРАНЕНИЕ СПЕЦ. ЗАГРЯЗНЕНИЙ",
     ],
-    image: "/fon/fon-6.jpg",
+    image: "/services/dry-cleaning.jpg",
+    link: "#",
   },
   {
     id: 7,
-    title: "7",
+    title: "ПОЛИРОВКА И ВОССТАНОВЛЕНИЕ",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "ПОЛИРОВКА ФАР И ФОНАРЕЙ",
+      "ПОЛИРОВКА ЭЛЕМЕНТА",
+      "ЛЕГКАЯ ПОЛИРОВКА",
+      "ВОССТАНОВИТЕЛЬНАЯ ПОЛИРОВКА",
+      "ЧИСТКА ЛКП",
     ],
-    image: "/fon/fon-7.jpg",
+    image: "/services/polishing-and-restoration.jpg",
+    link: "#",
   },
   {
     id: 8,
-    title: "8",
+    title: "ЗАЩИТНЫЕ ПОКРЫТИЯ",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "КЕРАМИКА ДЛЯ ДИСКОВ",
+      "КЕРАМИКА ДЛЯ ОПТИКИ",
+      "КЕРАМИКА ДЛЯ КУЗОВА SISHIELD",
+      "КЕРАМИКА ДЛЯ КУЗОВА SI3D",
+      "КЕРАМИКА ДЛЯ КУЗОВА SI3MAX",
     ],
-    image: "/fon/fon-8.jpg",
+    image: "/services/protective-coatings.jpg",
+    link: "#",
   },
   {
     id: 9,
-    title: "9",
+    title: "ОКЛЕЙКА",
     description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
+      "ОКЛЕЙКА ОПТИКИ",
+      "ОКЛЕЙКА ЗОН РИСКА",
+      "ЧАСТИЧНАЯ ОКЛЕЙКА КУЗОВА",
+      "ОКЛЕЙКА ЭЛЕМЕНТОВ КУЗОВА",
     ],
-    image: "/fon/fon-9.jpg",
-  },
-  {
-    id: 10,
-    title: "10",
-    description: [
-      "Легкая",
-      "Восстановительная",
-      "Частичная",
-      "Полировка фар",
-      "Шлифовка фар",
-    ],
-    image: "/fon/fon-10.jpg",
+    image: "/services/pasting-with-protective-film.jpg",
+    link: "#",
   },
 ];
 
 export default function Services() {
   return (
-    <section className={styles["services"]}>
+    <section className={styles["services"]} id="services">
       <h2 className={styles["services__title"]}>Услуги</h2>
-      <p className={styles["services__subtitle"]}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi veniam
-        maiores optio. Saepe fugiat nulla, quo animi minus perspiciatis enim ex
-        quas rerum vitae expedita recusandae velit voluptate. Sunt, adipisci?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, commodi
-        laboriosam. Nam facilis obcaecati nesciunt numquam debitis velit. Est
-        perspiciatis, ex rerum ipsum deserunt temporibus cum inventore quia hic
-        quidem!
-      </p>
+      <div className={styles["services__description"]}>
+        <p className={styles["services__text"]}>
+          Услуги АВТОМОЙКИ GT — это не просто мойка, а забота о каждом
+          автомобиле. Мы используем только профессиональные материалы и
+          технологии, чтобы сохранить безупречный внешний вид вашей машины: Для
+          ручной мойки применяем мягкие микрофибровые варежки — они бережно
+          удаляют загрязнения, не повреждая лакокрасочное покрытие.
+        </p>
+        <ul className={styles["services__text-list"]}>
+          <li className={styles["services__text-item"]}>
+            <p className={styles["services__text"]}>
+              Нижние элементы кузова обрабатываются отдельными губками,
+              исключающими перекрестное загрязнение.
+            </p>
+          </li>
+          <li className={styles["services__text-item"]}>
+            <p className={styles["services__text"]}>
+              Для сушки используем от 2 до 4 премиальных микрофибровых
+              полотенец, которые проходят стирку после каждого применения.
+            </p>
+          </li>
+          <li className={styles["services__text-item"]}>
+            <p className={styles["services__text"]}>
+              Все расходные материалы проходят регулярную проверку и заменяются
+              по мере необходимости.
+            </p>
+          </li>
+        </ul>
+        <p className={styles["services__text"]}>
+          Каждая услуга продумана так, чтобы ваш автомобиль выглядел идеально и
+          сохранял защиту на долгие годы.
+        </p>
+      </div>
       <Swiper
+        aria-label="Список услуг автомойки"
         modules={[Navigation, Pagination, Scrollbar, A11y]}
+        slidesPerView="auto"
+        centeredSlides={true}
+        navigation={true}
         loop={true}
-        navigation={{
-          prevEl: `.${styles.swiperPrev}`,
-          nextEl: `.${styles.swiperNext}`,
-        }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         breakpoints={{
@@ -167,11 +191,11 @@ export default function Services() {
             slidesPerView: 1,
             spaceBetween: 10,
           },
-          992: {
+          993: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
-          1440: {
+          1441: {
             slidesPerView: 4,
             spaceBetween: 30,
           },
@@ -195,7 +219,7 @@ export default function Services() {
                 {service.description.map((line, idx) => (
                   <li key={idx} className={styles["service-card__list-item"]}>
                     <Link
-                      href="#"
+                      href={service.link ?? "#"}
                       className={styles["service-card__list-link"]}
                     >
                       {line}

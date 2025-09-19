@@ -1,10 +1,14 @@
+"use client";
+
 import styles from "./Hero.module.css";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className={styles["hero"]}>
+
       <div className={styles["hero__content"]}>
+
         <p className={styles["hero__subtitle"]}>
           ДЛЯ ТЕХ, КТО ЦЕНИТ СВОЙ АВТОМОБИЛЬ
         </p>
@@ -13,10 +17,12 @@ export default function Hero() {
           КРУГЛОСУТОЧНАЯ АВТОМОЙКА В МИНСКЕ
         </h1>
 
-        <Link href="#" className={styles["hero__button"]}>
+        {/* <Link href="#" className={styles["hero__button"]}>
           ПЕРЕЙТИ К УСЛУГАМ
-        </Link>
+        </Link> */}
+        
       </div>
+
     </section>
   );
 }

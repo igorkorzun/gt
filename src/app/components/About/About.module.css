@@ -3,58 +3,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding: 100px 0;
+    gap: var(--gap-1);
+    padding: var(--gap-1) 0;
 }
 
 .about__title {
-    font-weight: bold;
-    font-size: 36px;
+    font-family: var(--font-days-one);
+    font-size: var(--size-title-2);
     text-align: center;
-    color: #fd6a11;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    padding: 0 100px;
+    color: var(--color-orange);
+    text-shadow: 0 0 10px var(--color-black-easy);
+    padding: 0 var(--gap-1);
 }
 
 .about__subtitle {
-    padding: 0 100px;
-    font-weight: bold;
-    font-size: 24px;
+    font-size: var(--size-text-2);
     text-align: center;
-    color: #fff;
-}
-
-@media (max-width: 1440px) {
-
-    .about {
-        padding: 50px 0;
-        gap: 50px;
-    }
-
-    .about__title {
-        padding: 0 50px;
-    }
-
-    .about__subtitle {
-        padding: 0 50px;
-    }
-
-}
-
-@media (max-width: 992px) {
-
-    .about {
-        padding: 25px 0;
-        gap: 25px;
-    }
-
-    .about__title {
-        font-size: 28px;
-    }
-
-    .about__subtitle {
-        padding: 0 25px;
-        font-size: 20px;
-    }
-
+    color: var(--color-white);
+    padding: 0 var(--gap-1);
 }

@@ -4,16 +4,17 @@ import styles from "./About.module.css";
 
 export default function About() {
   return (
-    <section className={styles["about"]}>
+    <section className={styles["about"]} id="about">
       <h2 className={styles["about__title"]}>О НАС</h2>
       <p className={styles["about__subtitle"]}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi veniam
-        maiores optio. Saepe fugiat nulla, quo animi minus perspiciatis enim ex
-        quas rerum vitae expedita recusandae velit voluptate. Sunt, adipisci?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, commodi
-        laboriosam. Nam facilis obcaecati nesciunt numquam debitis velit. Est
-        perspiciatis, ex rerum ipsum deserunt temporibus cum inventore quia hic
-        quidem!
+        CARWASHGT — это не просто автомойка, а пространство, созданное с любовью
+        к автомобилям и вниманием к деталям. Мы открылись 6 лет назад с одной
+        целью — сделать сервис таким, каким хотели бы пользоваться сами. За это
+        время мы стали лидерами рынка, доказав, что безупречное качество
+        обслуживания и высокий стандарт работы могут быть нормой. Каждая услуга
+        у нас — это комбинация современных технологий, профессионального подхода
+        и заботы о вашем автомобиле. CARWASHGT — когда мойка становится
+        искусством.
       </p>
     </section>
   );
