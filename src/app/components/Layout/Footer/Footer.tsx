@@ -76,7 +76,7 @@ export default function Footer() {
 
           <Link href="/" className={styles["footer__logo-link"]}>
             <Image
-              src="/logo.png"
+              src="/Logo.png"
               alt="Логотип CARWASHGT"
               width={200}
               height={200}
