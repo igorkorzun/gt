@@ -4,112 +4,33 @@
     gap: var(--gap-1);
     align-items: center;
     justify-content: center;
-    padding: var(--gap-1) var(--gap-2);
+    /* padding: var(--gap-1) 0 0 0; */
 }
 
-.advantages__title {
+.title {
+    position: relative;
     font-family: var(--font-days-one);
     font-size: var(--size-title-2);
     text-align: center;
     color: var(--color-orange);
     text-shadow: 0 0 10px var(--color-black-easy);
+    padding: 0 var(--gap-2);
 }
 
-.advantages__description {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-2);
-}
-
-.advantages__text {
-    font-size: var(--size-text-2);
-    text-align: center;
-    color: var(--color-white);
-    padding: 0 var(--gap-1);
-}
-
-.advantages__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: var(--gap-2);
-    width: 100%;
-}
-
-.advantages__item {
-    width: calc(100% / 8 - var(--gap-2));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    perspective: 1000px;
-}
-
-.advantages__card-text {
-    display: block;
-    max-width: 100%;
-    hyphens: auto;
-    overflow-wrap: break-word;
-}
-
-.advantages__card {
-    width: 100%;
-    min-height: 150px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-    cursor: pointer;
-}
-
-.advantages__item:hover .advantages__card {
-    transform: rotateY(180deg);
-}
-
-.advantages__card-front,
-.advantages__card-back {
-    padding: var(--gap-6);
+.title::before,
+.title::after {
+    content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--color-orange);
+    top: 50%;
+    width: 50vw;
+    height: 1px;
+    background: var(--color-gray);
 }
 
-.advantages__card-front {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.title::before {
+    left: 100%;
 }
 
-.advantages__card-back {
-    transform: rotateY(180deg);
-    box-sizing: border-box;
-    text-align: center;
-    font-weight: bold;
-    font-size: var(--size-text-4);
-    color: var(--color-white);
-}
-
-@media (max-width: 1440px) {
-    .advantages__text {
-        padding: 0 0;
-    }
-
-    .advantages__item {
-        width: calc(100% / 4 - var(--gap-2));
-    }
-}
-
-@media (max-width: 992px) {
-    .advantages__text {
-        padding: 0 0;
-    }
-
-    .advantages__card {
-        min-height: 100px;
-    }
+.title::after {
+    right: 100%;
 }

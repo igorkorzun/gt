@@ -1,28 +1,20 @@
 "use client";
 
 import styles from "./Hero.module.css";
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className={styles["hero"]}>
+      <div className={styles["content"]}>
+        <p className={styles["subtitle"]}>ДЛЯ ТЕХ, КТО ЦЕНИТ СВОЙ АВТОМОБИЛЬ</p>
 
-      <div className={styles["hero__content"]}>
+        <h1 className={styles["title"]}>КРУГЛОСУТОЧНАЯ АВТОМОЙКА В МИНСКЕ</h1>
 
-        <p className={styles["hero__subtitle"]}>
-          ДЛЯ ТЕХ, КТО ЦЕНИТ СВОЙ АВТОМОБИЛЬ
-        </p>
-
-        <h1 className={styles["hero__title"]}>
-          КРУГЛОСУТОЧНАЯ АВТОМОЙКА В МИНСКЕ
-        </h1>
-
-        {/* <Link href="#" className={styles["hero__button"]}>
+        <Link href="#" className={styles["button"]}>
           ПЕРЕЙТИ К УСЛУГАМ
-        </Link> */}
-        
+        </Link>
       </div>
-
     </section>
   );
 }

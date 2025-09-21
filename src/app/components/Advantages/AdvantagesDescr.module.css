@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2);
+    padding: 0 var(--gap-2);
+}
+
+.item {}
+
+.text {
+    font-size: var(--size-text-2);
+    text-align: center;
+    color: var(--color-white);
+}
+
+.strong {}

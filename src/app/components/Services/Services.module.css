@@ -4,16 +4,35 @@
     align-items: center;
     justify-content: center;
     gap: var(--gap-1);
-    padding: var(--gap-1) 0;
+    /* padding: var(--gap-1) 0; */
 }
 
 .title {
+    position: relative;
     font-family: var(--font-days-one);
     font-size: var(--size-title-2);
     text-align: center;
     color: var(--color-orange);
     text-shadow: 0 0 10px var(--color-black-easy);
-    padding: 0 var(--gap-1);
+    padding: 0 var(--gap-2);
+}
+
+.title::before,
+.title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50vw;
+    height: 1px;
+    background: var(--color-gray);
+}
+
+.title::before {
+    left: 100%;
+}
+
+.title::after {
+    right: 100%;
 }
 
 .description {
@@ -21,7 +40,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 var(--gap-1);
+    padding: 0 var(--gap-2);
     gap: var(--gap-2);
 }
 
